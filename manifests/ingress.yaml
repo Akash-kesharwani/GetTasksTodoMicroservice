@@ -12,6 +12,6 @@ spec:
           service:
             name: get-service
             port:
-            - number: 80
+              number: 80
         path: "/"
         pathType: Prefix

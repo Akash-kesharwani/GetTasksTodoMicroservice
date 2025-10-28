@@ -6,15 +6,15 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: get-todo
+      app: get-label
   template:
     metadata:
       labels:
-        app: get-todo
+        app: get-label
     spec:
       containers:
       - name: get-con
-        image: appacrakash01.azurecr.io/todo-get-tasks-api:v1
+        image: appacrakash01.azurecr.io/todo-get-tasks-api:v1   
         ports:
         - containerPort: 8000
         env:
