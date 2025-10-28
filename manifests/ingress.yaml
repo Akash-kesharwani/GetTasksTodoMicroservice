@@ -1,18 +1,17 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: get-tasks-ingress
-  annotations:
-    kubernetes.io/ingress.class: azure/application-gateway
+  name: get-ing
 spec:
+  ingressClassName: nginx
   rules:
-  - host: get-tasks.devopsinsiders.online
+  - host: get.cloudpunk.shop
     http:
       paths:
-      - pathType: Prefix
-        path: "/"
-        backend:
+      - backend:
           service:
-            name: get-tasks
-            port: 
-              number: 80
+            name: get-service
+            port:
+            - number: 80
+        path: "/"
+        pathType: Prefix
