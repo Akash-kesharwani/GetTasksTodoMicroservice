@@ -20,3 +20,4 @@ spec:
         env:
         - name: CONNECTION_STRING
           value: "Driver={ODBC Driver 18 for SQL Server};Server=tcp:sqlserverakash01.database.windows.net,1433;Database=sql_db;Uid=sql_username;Pwd=Password@123;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
+          
