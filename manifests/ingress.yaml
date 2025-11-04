@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: get-ing
 spec:
-  ingressClassName: nginx
+  ingressClassName: azure-application-gateway
   rules:
   - host: get.cloudpunk.shop
     http:
