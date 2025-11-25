@@ -2,7 +2,7 @@ name: Build and Push to ACR
 
 on:
   push:
-    branch:
+    branches:
     - main  
 
 permissions:
@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      IMAGE_NAME: todo-get-tasks-api
+      IMAGE_NAME: todo-get-task
       IMAGE_TAG: v1
-      ACR_NAME: appacrakash01
-      ACR_LOGIN_SERVER: appacrakash01.azurecr.io
+      ACR_NAME: acrak123
+      ACR_LOGIN_SERVER: acrak123.azurecr.io
 
     steps:
       - name: Checkout code
